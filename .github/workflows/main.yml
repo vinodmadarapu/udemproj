@@ -12,7 +12,7 @@ jobs:
     needs: Deploy
     steps:
       - name: list job
-        run: echo "Lint job1 step"
+        run: get-service
       - name: lint job2
         run: echo "Lint job2 step"
   Deploy:
