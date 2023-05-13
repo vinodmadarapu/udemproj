@@ -12,7 +12,7 @@ jobs:
     needs: Deploy
     steps:
       - name: list job
-        run: echo "${{github}}"
+        run: echo "${{ toJSON(github) }}"
       - name: lint job2
         run: echo "Lint job2 step"
   Deploy:
